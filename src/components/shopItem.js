@@ -12,9 +12,9 @@ const ShopItem = () => {
             <p className='name'>Webbuilder 1</p>
             <p>Computer  Modern clasic with wix support</p>
             <div className="item-price">
-                <p>$39.96</p>
-                <p>$49.96</p>
-                <p className='discount-p'>(20% Off)</p>
+                <p className='p1'>$39.96</p>
+                <p className='p2'>$49.96</p>
+                <p className='p3'>(20% Off)</p>
             </div>
             <button>View Deal</button>
         </div>

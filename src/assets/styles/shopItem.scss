@@ -3,7 +3,8 @@
 .item-container {
   width: 25vw;
   height: 66vh;
-//   border: 1px solid rgb(221, 112, 130);
+  margin: 0 0.8vw;
+  //   border: 1px solid rgb(221, 112, 130);
   background: $color-white;
   border-radius: 12px;
   color: $color-txt2;
@@ -13,45 +14,58 @@
   img {
     height: 16vh;
     width: 10vw;
-    margin: 2.5rem;
+    margin: 2rem;
   }
-  > p{
-    padding: 0;
+  > p {
+    padding: 4px;
     margin: 0;
     color: $color-txt2;
   }
   .discount {
     @include flexProp($align: flex-start);
-    p{
-        @include flexProp;
-        background: $color-bg2;
-        border-radius: 8px;
-        color: $color-txt1;
-        height:$font-size4;
-        width: 6.5vw;
-        margin: 1px 2px;
-        padding-top: 0;
+    margin-top: 1.5rem;
+    p {
+      @include flexProp;
+      background: $color-bg2;
+      border-radius: 8px;
+      color: $color-txt1;
+      height: $font-size4;
+      width: 6.5vw;
+      margin: 1px 2px;
+      padding-top: 2px 4px;
     }
   }
-  .name{
+  .name {
     font-weight: 700;
     font-size: $font-size2;
     @include flexProp;
   }
-  .item-price{
-    @include flexProp;
-    :first-child{
+  .item-price {
+    @include flexProp($just: flex-start);
+    width: 20vw;
+    .p1 {
+      font-size: $font-size4;
+      position: relative;
+      top: -0.3rem;
+        margin: 1rem 5px;
+    }
 
+    .p2 {
+      font-size: $font-size3;
+        margin: 2px 5px;
+      color: #9fa9b3;
     }
-    .discount-p{
-        font-size: $font-size3;
-        color: #EF4C5D;
+    .p3 {
+      font-size: $font-size3;
+      color: #ef4c5d;
+        margin: 2px 5px;
     }
+  }
+  button {
+    @extend buttonProp;
+    width: 21vw;
+    height: 7.5vh;
+    border-radius: 12px;
   }
 }
 
-button{
-    @extend buttonProp;
-    width: 24vw;
-    height: 7.5vh;
-}
