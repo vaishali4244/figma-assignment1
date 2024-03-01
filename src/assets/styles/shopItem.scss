@@ -8,7 +8,7 @@
   background: $color-white;
   border-radius: 12px;
   color: $color-txt2;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0.5rem 0.5rem;
   @include flexProp($dir: column);
   img {
@@ -19,11 +19,13 @@
   > p {
     padding: 4px;
     margin: 0;
+    width:19vw;
     color: $color-txt2;
   }
   .discount {
-    @include flexProp($align: flex-start);
+    @include flexProp($just:flex-start,$align: flex-start);
     margin-top: 1.5rem;
+    width: 19vw;
     p {
       @include flexProp;
       background: $color-bg2;
@@ -37,6 +39,7 @@
   }
   .name {
     font-weight: 700;
+    margin-top: 5px;
     font-size: $font-size2;
     @include flexProp;
   }
@@ -47,18 +50,18 @@
       font-size: $font-size4;
       position: relative;
       top: -0.3rem;
-        margin: 1rem 5px;
+      margin: 1rem 5px;
     }
 
     .p2 {
       font-size: $font-size3;
-        margin: 2px 5px;
+      margin: 2px 5px;
       color: #9fa9b3;
     }
     .p3 {
       font-size: $font-size3;
       color: #ef4c5d;
-        margin: 2px 5px;
+      margin: 2px 5px;
     }
   }
   button {
@@ -68,4 +71,3 @@
     border-radius: 12px;
   }
 }
-

@@ -1,4 +1,4 @@
-
+import '../assets/styles/keywords.scss';
 
 
 const Keywords =()=>{

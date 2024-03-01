@@ -50,7 +50,7 @@ const Screen = () => {
                     </div>
                 </div>
             </div>
-                <Footer />
+            <Footer />
         </>
     )
 }

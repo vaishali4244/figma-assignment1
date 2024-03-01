@@ -17,6 +17,7 @@
     height: 5.5vh;
     border-radius: 8px;
     border: none;
+    margin-right: 4vw;
   }
   img {
     height: 1.5rem;
@@ -29,5 +30,8 @@
 .nav-btn {
   color: $color-txt3;
   text-decoration: none;
-  margin: 2px 5vw;
+  margin: 2px 2.5vw;
+  border: none;
+  background: none;
+  width: 20vw;
 }

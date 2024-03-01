@@ -3,30 +3,76 @@
 .main-container {
   background-color: $color-bg;
   padding: 0 10vw;
+  color: $color-txt2;
+
   .item-content {
     @include flexProp;
-    margin: 2vh 1vw;
+    margin: 2vh 1.5vw;
   }
-  .signup {
-    @include flexProp;
+
+  h1 {
     font-size: 3rem;
     font-weight: 400;
+    margin: 0;
+    padding-top: 2rem;
+  }
+
+  .page-details {
+    border-top: 2px solid $color-bg2;
+    border-bottom: 2px solid $color-bg2;
+    @include flexProp($just: space-between);
+    font-size: $font-size1;
+    margin: 0.8rem 0;
+
+    img {
+        height: 1.3rem;
+        width: 1.3rem;
+        margin-right: 0.5rem;
+      }
+
+    .date {
+      @include flexProp($just: flex-start);
+
+      
+
+      p {
+        margin-right: 1.4rem;
+      }
+    }
+
+    .dropdown{
+        @include flexProp($just: flex-end)
+    }
+  }
+
+  .signup {
+    @include flexProp;
+    // width: 75vw;
+    font-size: 2rem;
+    font-weight: 400;
+    p {
+      display: block;
+      width: 30vw;
+      line-height: 2.75rem;
+      color: $color-txt2;
+    }
     .signup-input {
       @include flexProp;
       height: 3.25rem;
       > input {
         height: 3.25rem;
         width: 25vw;
-        border-radius:12px 12px;
+        border-radius: 12px 0 0 12px;
+        border: none;
+        margin-left: 8vw;
       }
     }
-    button{
-        @extend buttonProp;
-        width: 4vw;
-        height: 3.25rem;
-        border-radius:0, 12px, 12px, 0px;
-        // position: relative;
-        // right: 4vw;
+    button {
+      @extend buttonProp;
+      width: 7vw;
+      height: 3.25rem;
+      font-size: $font-size1;
+      border-radius: 0 12px 12px 0px;
     }
   }
 }

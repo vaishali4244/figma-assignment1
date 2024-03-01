@@ -1,0 +1,16 @@
+@import "_app";
+@import "_builder";
+
+
+
+.highlight-content{
+    @include flexProp($dir:column);
+background: #FFF4ED;
+}
+
+.p-content{
+    @include flexProp;
+    img{
+        height: 2rem;
+    }
+}

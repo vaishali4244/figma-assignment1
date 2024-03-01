@@ -1,4 +1,4 @@
-
+import '../assets/styles/cdkBuilder.scss';
 
 
 const CdkBuilder = ({ imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
