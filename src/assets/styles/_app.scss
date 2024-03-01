@@ -1,0 +1,32 @@
+$color-bg: #FBFCFD;
+$color-bg2: #e1e8f3;
+$color-content: #f3f9ff;
+$color-white: white;
+$color-btn: #1b88f4;
+$color-menu: #212731;
+$color-txt1: #074786;
+$color-txt2: #4b5665;
+$color-txt3: #d1d6da;
+$font-size1: 0.9rem;
+$font-size2: 1rem;
+$font-size3: 0.85rem;
+$font-size4: 1.5rem;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexProp($dir: row, $just: center, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+}
+
+buttonProp {
+  background: $color-btn;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+}

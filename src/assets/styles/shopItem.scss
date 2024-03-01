@@ -1,0 +1,57 @@
+@import "_app";
+
+.item-container {
+  width: 25vw;
+  height: 66vh;
+//   border: 1px solid rgb(221, 112, 130);
+  background: $color-white;
+  border-radius: 12px;
+  color: $color-txt2;
+  font-weight: 400;
+  padding: 0.5rem 0.5rem;
+  @include flexProp($dir: column);
+  img {
+    height: 16vh;
+    width: 10vw;
+    margin: 2.5rem;
+  }
+  > p{
+    padding: 0;
+    margin: 0;
+    color: $color-txt2;
+  }
+  .discount {
+    @include flexProp($align: flex-start);
+    p{
+        @include flexProp;
+        background: $color-bg2;
+        border-radius: 8px;
+        color: $color-txt1;
+        height:$font-size4;
+        width: 6.5vw;
+        margin: 1px 2px;
+        padding-top: 0;
+    }
+  }
+  .name{
+    font-weight: 700;
+    font-size: $font-size2;
+    @include flexProp;
+  }
+  .item-price{
+    @include flexProp;
+    :first-child{
+
+    }
+    .discount-p{
+        font-size: $font-size3;
+        color: #EF4C5D;
+    }
+  }
+}
+
+button{
+    @extend buttonProp;
+    width: 24vw;
+    height: 7.5vh;
+}

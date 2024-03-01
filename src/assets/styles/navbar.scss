@@ -1,0 +1,33 @@
+@import "_app";
+
+.nav-container {
+  @include flexProp;
+  background-color: $color-menu;
+  height: 10vh;
+  padding: 0 10vw;
+  font-size: $font-size1;
+  line-height: 1.25rem;
+}
+
+.nav-input {
+  @include flexProp;
+  margin-left: 10vw;
+  input {
+    width: 18vw;
+    height: 5.5vh;
+    border-radius: 8px;
+    border: none;
+  }
+  img {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: relative;
+    left: 1.8rem;
+  }
+}
+
+.nav-btn {
+  color: $color-txt3;
+  text-decoration: none;
+  margin: 2px 5vw;
+}

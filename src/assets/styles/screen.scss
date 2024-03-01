@@ -1,0 +1,10 @@
+@import "_app";
+
+.main-container{
+    background-color: $color-bg;
+    .item-content{
+        @include flexProp;
+        margin: 2vh 2vw;
+    }
+}
+
