@@ -1,12 +1,13 @@
 import '../assets/styles/cdkBuilder.scss';
 
 
-const CdkBuilder = ({ imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
+const CdkBuilder = ({ number, imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
 
 
     return (
         <div className="builder-container">
             <div className="img">
+            <p className='builder-number'>{number}</p>
                 <img src={require("../assets/images/download 1.png")} alt="" />
                 <p>{imgName}</p>
             </div>

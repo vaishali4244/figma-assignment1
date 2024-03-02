@@ -2,12 +2,19 @@ import '../assets/styles/_builder.scss';
 
 
 
-const Builder = ({ imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
+const Builder = ({hide, choiceImg, choiceTag, number, imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
 
 
     return (
+        <>
+         {hide ? null :<div className="builder-choice" >
+            <img src={choiceImg} alt="" />
+            <p>{choiceTag}</p>
+        </div>}
+        
         <div className="builder-container">
             <div className="img">
+            <p className='builder-number'>{number}</p>
                 <img src={require("../assets/images/download 1.png")} alt="" />
                 <p>{imgName}</p>
             </div>
@@ -29,6 +36,7 @@ const Builder = ({ imgName, title, intro, image, highlights, rating, ratingLevel
                 <button className="view">View </button>
             </div>
         </div>
+        </>
     )
 }
 

@@ -30,3 +30,13 @@ buttonProp {
   border: none;
   color:$color-white;
 }
+
+.breadcrumb-container{
+  @include flexProp($dir:flex-start);
+  width: 24rem;
+  // border: 1px solid green;
+  font-size:$font-size1 ;
+  span{
+    margin:0 0.5rem;
+  }
+}

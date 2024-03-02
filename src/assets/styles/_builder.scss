@@ -1,16 +1,46 @@
 @import "_app";
 
+.builder-choice {
+  @include flexProp($just:space-evenly);
+  height: 2.2rem;
+  width: 8.5rem;
+  border-radius: 0px 8px 8px 0px;
+  background: #ff7724;
+  font-size: $font-size2;
+  color: $color-white;
+  position: relative;
+  top: 2.25rem;
+
+  img{
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
 
 .builder-container {
   @include flexProp($just: space-between);
   background: $color-white;
   height: 40vh;
+  margin: 3vh 0;
+  padding: 0 3vw;
 
   .img {
     @include flexProp($dir: column);
     img {
       height: 15vh;
       width: 10vw;
+    }
+
+    .builder-number {
+      @include flexProp;
+      border: 1px solid $color-bg2;
+      background: $color-white;
+      height: 2.75rem;
+      width: 2.75rem;
+      border-radius: 50%;
+      font-size: $font-size4;
+      position: relative;
+      right: 6.6rem;
     }
   }
 
@@ -27,9 +57,9 @@
       font-weight: 700;
     }
 
-    .more{
+    .more {
       color: $color-btn;
-      img{
+      img {
         height: 1rem;
         width: 1rem;
       }
