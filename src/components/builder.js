@@ -1,7 +1,6 @@
 import '../assets/styles/_builder.scss';
 
 
-
 const Builder = ({ hide, choiceImg, choiceTag, number, imgName, title, intro, image, highlights, rating, ratingLevel, stars }) => {
 
 

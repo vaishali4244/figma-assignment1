@@ -36,8 +36,10 @@ buttonProp {
 .breadcrumb-container {
   @include flexProp($dir: flex-start);
   width: 26rem;
-  // border: 1px solid green;
   font-size: $font-size1;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 
   span {
     margin: 0 0.5rem;

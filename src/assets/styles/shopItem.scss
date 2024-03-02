@@ -10,11 +10,18 @@
   font-weight: 500;
   padding: 0.5rem 0.5rem;
   @include flexProp($dir: column);
+  @media screen and (max-width: 1350px) {
+    width: 50vw;
+  }
 
   img {
     height: 16vh;
     width: 10vw;
     margin: 2rem;
+    @media screen and (max-width: 1350px) {
+      height: 10rem;
+      width: 12rem;
+    }
   }
 
   > p {
@@ -22,12 +29,18 @@
     margin: 0;
     width: 19vw;
     color: $color-txt2;
+    @media screen and (max-width: 1350px) {
+      width: 70%;
+    }
   }
 
   .discount {
     @include flexProp($just: flex-start, $align: flex-start);
     margin-top: 1.5rem;
     width: 19vw;
+    @media screen and (max-width: 1350px) {
+      @include flexProp($dir: column);
+    }
 
     p {
       @include flexProp;
@@ -38,6 +51,9 @@
       width: 6.5vw;
       margin: 1px 2px;
       padding-top: 2px 4px;
+      @media screen and (max-width: 1350px) {
+        width: 45vw;
+      }
     }
   }
 
@@ -51,6 +67,7 @@
   .item-price {
     @include flexProp($just: flex-start);
     width: 20vw;
+
     .p1 {
       font-size: $font-size4;
       position: relative;
@@ -62,12 +79,18 @@
       font-size: $font-size3;
       margin: 2px 5px;
       color: #9fa9b3;
+      @media screen and (max-width: 1350px) {
+        display: none;
+      }
     }
 
     .p3 {
       font-size: $font-size3;
       color: #ef4c5d;
       margin: 2px 5px;
+      @media screen and (max-width: 1350px) {
+        display: none;
+      }
     }
   }
 
@@ -76,5 +99,8 @@
     width: 21vw;
     height: 7.5vh;
     border-radius: 12px;
+    @media screen and (max-width: 1350px) {
+      font-size: $font-size2;
+    }
   }
 }

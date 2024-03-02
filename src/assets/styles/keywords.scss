@@ -3,6 +3,9 @@
 .keyword-container {
   @include flexProp($just: flex-start);
   width: 70vw;
+  @media screen and (max-width: 600px) {
+    @include flexProp($dir: column);
+  }
 
   p {
     @include flexProp;
@@ -12,5 +15,8 @@
     border-radius: 12px;
     margin: 0.5vh 2vw;
     cursor: $cursor;
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
   }
 }

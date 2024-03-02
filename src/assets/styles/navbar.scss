@@ -7,6 +7,11 @@
   padding: 0 10vw;
   font-size: $font-size1;
   line-height: 1.25rem;
+  @media screen and (max-width: 400px) {
+    @include flexProp($dir: column, $align: flex-start);
+    height: auto;
+    padding: 0;
+  }
 }
 
 .nav-input {
@@ -19,6 +24,9 @@
     border-radius: 8px;
     border: none;
     margin-right: 4vw;
+    @media screen and (max-width: 400px) {
+      width: 80%;
+    }
   }
 
   img {
@@ -37,4 +45,7 @@
   background: none;
   width: 20vw;
   cursor: $cursor;
+  @media screen and (max-width: 400px) {
+    width: 80%;
+  }
 }

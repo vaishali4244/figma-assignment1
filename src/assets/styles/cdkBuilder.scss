@@ -6,10 +6,17 @@
   margin-top: 6vh;
   box-sizing: border-box;
   @include flexProp($just: space-between);
+  @media screen and (max-width: 850px) {
+    @include flexProp($dir: column);
+    height: auto;
+  }
 
   .img {
     height: 60vh;
     @include flexProp($dir: column, $just: space-evenly);
+    @media screen and (max-width: 1000px) {
+      height: 50%;
+    }
   }
 
   .p-off {
@@ -34,6 +41,9 @@
 
   .rating-content {
     height: 73vh;
+    @media screen and (max-width: 1000px) {
+      height: auto;
+    }
   }
 }
 

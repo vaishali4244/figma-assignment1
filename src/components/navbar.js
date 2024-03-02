@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="nav-container">
                 <div className="nav-input">
                     <img src={require("../assets/images/IMAGE (2).png")} alt="" />
-                    <input type="text" className="" />
+                    <input type="text" />
                 </div>
                 <button className="nav-btn">Categories</button>
                 <button className="nav-btn">Website Builders</button>

@@ -8,6 +8,10 @@
   .item-content {
     @include flexProp;
     margin: 2vh 1.5vw;
+
+    @media screen and (max-width: 1350px) {
+      @include flexProp($dir: column);
+    }
   }
 
   h1 {
@@ -41,6 +45,9 @@
     .dropdown {
       @include flexProp($just: flex-end);
       cursor: $cursor;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
     }
   }
 
@@ -48,7 +55,9 @@
     @include flexProp;
     font-size: 2rem;
     font-weight: 400;
-
+    @media screen and (max-width: 900px) {
+      @include flexProp($dir: column);
+    }
     p {
       display: block;
       width: 30vw;
