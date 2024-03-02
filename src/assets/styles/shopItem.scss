@@ -4,28 +4,31 @@
   width: 25vw;
   height: 66vh;
   margin: 0 0.8vw;
-  //   border: 1px solid rgb(221, 112, 130);
   background: $color-white;
   border-radius: 12px;
   color: $color-txt2;
   font-weight: 500;
   padding: 0.5rem 0.5rem;
   @include flexProp($dir: column);
+
   img {
     height: 16vh;
     width: 10vw;
     margin: 2rem;
   }
+
   > p {
     padding: 4px;
     margin: 0;
-    width:19vw;
+    width: 19vw;
     color: $color-txt2;
   }
+
   .discount {
-    @include flexProp($just:flex-start,$align: flex-start);
+    @include flexProp($just: flex-start, $align: flex-start);
     margin-top: 1.5rem;
     width: 19vw;
+
     p {
       @include flexProp;
       background: $color-bg2;
@@ -37,12 +40,14 @@
       padding-top: 2px 4px;
     }
   }
+
   .name {
     font-weight: 700;
     margin-top: 5px;
     font-size: $font-size2;
     @include flexProp;
   }
+
   .item-price {
     @include flexProp($just: flex-start);
     width: 20vw;
@@ -58,12 +63,14 @@
       margin: 2px 5px;
       color: #9fa9b3;
     }
+
     .p3 {
       font-size: $font-size3;
       color: #ef4c5d;
       margin: 2px 5px;
     }
   }
+
   button {
     @extend buttonProp;
     width: 21vw;

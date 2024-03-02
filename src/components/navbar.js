@@ -9,9 +9,9 @@ const Navbar = () => {
                     <img src={require("../assets/images/IMAGE (2).png")} alt="" />
                     <input type="text" className="" />
                 </div>
-                <button href="#" className="nav-btn">Categories</button>
-                <button href="#" className="nav-btn">Website Builders</button>
-                <button href="#" className="nav-btn">Today's deals</button>
+                <button className="nav-btn">Categories</button>
+                <button className="nav-btn">Website Builders</button>
+                <button className="nav-btn">Today's deals</button>
             </div>
         </>
     )

@@ -1,8 +1,8 @@
 import '../assets/styles/keywords.scss';
 
 
-const Keywords =()=>{
-    return(
+const Keywords = () => {
+    return (
         <div className="keyword-container">
             <p>Tools</p>
             <p>AWS Builder</p>

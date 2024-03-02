@@ -25,40 +25,41 @@
     margin: 0.8rem 0;
 
     img {
-        height: 1.3rem;
-        width: 1.3rem;
-        margin-right: 0.5rem;
-      }
+      height: 1.3rem;
+      width: 1.3rem;
+      margin-right: 0.5rem;
+    }
 
     .date {
       @include flexProp($just: flex-start);
-
-      
 
       p {
         margin-right: 1.4rem;
       }
     }
 
-    .dropdown{
-        @include flexProp($just: flex-end)
+    .dropdown {
+      @include flexProp($just: flex-end);
+      cursor: $cursor;
     }
   }
 
   .signup {
     @include flexProp;
-    // width: 75vw;
     font-size: 2rem;
     font-weight: 400;
+
     p {
       display: block;
       width: 30vw;
       line-height: 2.75rem;
       color: $color-txt2;
     }
+
     .signup-input {
       @include flexProp;
       height: 3.25rem;
+
       > input {
         height: 3.25rem;
         width: 25vw;
@@ -67,6 +68,7 @@
         margin-left: 8vw;
       }
     }
+
     button {
       @extend buttonProp;
       width: 7vw;

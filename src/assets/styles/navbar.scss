@@ -12,6 +12,7 @@
 .nav-input {
   @include flexProp;
   margin-left: 10vw;
+
   input {
     width: 18vw;
     height: 5.5vh;
@@ -19,6 +20,7 @@
     border: none;
     margin-right: 4vw;
   }
+
   img {
     height: 1.5rem;
     width: 1.5rem;
@@ -34,4 +36,5 @@
   border: none;
   background: none;
   width: 20vw;
+  cursor: $cursor;
 }

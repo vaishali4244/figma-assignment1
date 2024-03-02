@@ -1,16 +1,80 @@
 @import "_app";
 @import "_builder";
 
+.cdk {
+  height: 73vh;
+  margin-top: 6vh;
+  box-sizing: border-box;
+  @include flexProp($just: space-between);
 
+  .img {
+    height: 60vh;
+    @include flexProp($dir: column, $just: space-evenly);
+  }
 
-.highlight-content{
-    @include flexProp($dir:column);
-background: #FFF4ED;
+  .p-off {
+    @include flexProp;
+    color: $color-txt1;
+    background: #f2f4f7;
+    font-size: $font-size3;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    width: 3.8rem;
+    height: 1.6rem;
+    margin: 0;
+  }
+
+  .builder-content {
+    @include flexProp($dir: column, $just: flex-start, $align: space-around);
+
+    h5 {
+      margin: 1rem;
+    }
+  }
+
+  .rating-content {
+    height: 73vh;
+  }
 }
 
-.p-content{
+.highlight-content {
+  @include flexProp($dir: column, $just: space-evenly, $align: flex-start);
+  height: 18vh;
+  width: 36vw;
+  background: #fff4ed;
+  border-radius: 12px;
+  margin-left: 0.8rem;
+
+  .highlight-p {
     @include flexProp;
-    img{
-        height: 2rem;
+    margin: 0;
+
+    span {
+      @include flexProp;
+      font-weight: 400;
+      margin: 0.5vh 1rem;
+      background: $color-white;
+      border-radius: 4px;
+      height: 1.7rem;
+      width: 40px;
     }
+  }
+}
+
+.cdk-feature {
+  @include flexProp($dir: column, $just: space-evenly, $align: flex-start);
+  margin: 0;
+
+  .p-content {
+    @include flexProp;
+
+    img {
+      height: 2rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

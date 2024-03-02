@@ -5,18 +5,18 @@ import CdkBuilder from "./cdkBuilder";
 
 
 const BuilderChoice = () => {
-   
+
 
     return (
 
         <div className="all-builder-container">
             <Builder
-            hide={false}
-            choiceImg={require("../assets/images/IMAGE.png")}
-            choiceTag="Best Choice"
-            number="1"
+                hide={false}
+                choiceImg={require("../assets/images/IMAGE.png")}
+                choiceTag="Best Choice"
+                number="1"
                 imgName="Builder 1"
-                title="WixPro 72-Inch Responsive Website Builder-" intro="Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
+                title="WixPro 72-Inch Responsive Website Builder - " intro="Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
                 image={<img src={require("../assets/images/blueIMAGE.png")} alt="" />}
                 highlights=" Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
                 rating="9.8"
@@ -25,24 +25,26 @@ const BuilderChoice = () => {
             />
 
             <Builder
-            hide={false}
-            choiceImg={require("../assets/images/IMAGE (1).png")}
-            choiceTag="Best Value"
+                hide={false}
+                choiceImg={require("../assets/images/IMAGE (1).png")}
+                choiceTag="Best Value"
                 imgName="Builder"
                 number="2"
-                title="SiteCraft 68-Inch Ultimate Web Design Studio-" intro=" Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)"
+                title="SiteCraft 68-Inch Ultimate Web Design Studio - "
+                intro=" Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)"
                 image={<img src={require("../assets/images/blueIMAGE.png")} alt="" />}
                 highlights="Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations."
                 rating="9.5"
                 ratingLevel="Excellent"
                 stars={require("../assets/images/IMAGE (3).png")}
             />
-            
-            <Builder 
-            hide={true}
-            number="3"
-            imgName="Builder 1"
-                title="WixPro 72-Inch Responsive Website Builder-" intro=" Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
+
+            <Builder
+                hide={true}
+                number="3"
+                imgName="Builder 1"
+                title="WixPro 72-Inch Responsive Website Builder - "
+                intro=" Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)"
                 image=""
                 highlights="Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
                 rating="9.3"
@@ -50,10 +52,11 @@ const BuilderChoice = () => {
                 stars={require("../assets/images/IMAGE (4).png")}
             />
 
-            <CdkBuilder 
-            number="4"
-            imgName="CDK"
-                title=" CDK Resposive Builder:" intro=" An extensive library of widgets and apps, and detailed step-by-step guides"
+            <CdkBuilder
+                number="4"
+                imgName="CDK"
+                title=" CDK Resposive Builder :"
+                intro=" An extensive library of widgets and apps, and detailed step-by-step guides"
                 image=""
                 highlights="Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
                 rating="9.1"

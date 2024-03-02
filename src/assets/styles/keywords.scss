@@ -1,14 +1,16 @@
 @import "_app";
 
-.keyword-container{
-    @include flexProp($just:flex-start);
-    width: 70vw;
-    p{
-        @include flexProp;
-        width: 10vw;
-        height: 2.25rem;
-        background:$color-white ;
-        border-radius: 12px;
-        margin: 0.5vh 2vw;
-    }
+.keyword-container {
+  @include flexProp($just: flex-start);
+  width: 70vw;
+
+  p {
+    @include flexProp;
+    width: 10vw;
+    height: 2.25rem;
+    background: $color-white;
+    border-radius: 12px;
+    margin: 0.5vh 2vw;
+    cursor: $cursor;
+  }
 }

@@ -17,12 +17,16 @@
     height: 50vh;
     width: 20vw;
   }
+
   .footer-p {
     font-size: $font-size1;
+    cursor: $cursor;
   }
+
   .side-menu {
     @include flexProp($dir: row);
     padding-right: 5vw;
+
     img {
       width: 1rem;
       margin-left: 0.5rem;
